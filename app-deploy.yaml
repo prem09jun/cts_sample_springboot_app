@@ -51,9 +51,10 @@ metadata:
     stack.appsody.dev/id: java-spring-boot2
     stack.appsody.dev/version: 0.3.29
   name: cts-sample-springboot
-  namespace: cts-kabanerodemo
+  namespace: cts-ipm-101
 spec:
-  applicationImage: dev.local/cts-sample-springboot
+  applicationImage: uk.icr.io/sandbox-registry-cognizant/
+  serviceAccountName: default
   createKnativeService: false
   expose: true
   livenessProbe:
